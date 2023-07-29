@@ -1,0 +1,149 @@
+
+main {
+    width: 100%;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px;
+    max-width: 1300px;
+}
+
+main > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 20px;
+}
+
+.profile_info {
+    padding: 20px 0;
+}
+
+.profile_info h1 {
+    font-size: 4rem;
+    line-height: 4.6rem;
+    padding-bottom: 20px;
+    letter-spacing: 1.6px;
+}
+
+.profile_info p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+    color: #2e2e2e;
+}
+
+.profile_info > div svg {
+    padding-right: 20px;
+    height: 2.3rem;
+    transition: all .2s ease-in-out;
+}
+
+.profile_info > div svg:hover {
+    fill: blue;
+}
+
+.profile_pic {
+    height: 320px;
+    display: flex;
+    justify-content: end;
+}
+
+.profile_pic > div {
+    height: 100%;
+    width: 320px;
+}
+
+.profile_pic > div > div {
+    height: 100%;
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+    border: 3px solid rgb(55, 55, 55);
+    overflow: hidden;
+}
+
+.profile_pic > div > div img {
+    height: 100%;
+}
+
+
+@media only screen and (max-width: 1270px) {
+    
+    main {
+        padding: 150px 120px;
+    }
+    
+    .profile_info h1 {
+        font-size: 3rem;
+        line-height: 3.6rem;
+        letter-spacing: 1.3px;
+    }
+    
+    .profile_info p {
+        font-size: 1.1rem;
+        line-height: 1.4rem;
+        letter-spacing: .8px;
+    }
+    
+    .profile_info > div svg {
+        height: 2rem;
+    }
+
+    .profile_pic {
+        height: 290px;
+    }
+    
+    .profile_pic > div {
+        height: 100%;
+        width: 290px;
+    }
+
+}
+
+@media only screen and (max-width: 960px) {
+    
+    main > div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .profile_pic {
+        margin-bottom: 50px;
+    }
+
+    .profile_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 620px) {
+    
+    main {
+        padding: 140px 50px 40px 50px ;
+    }
+    
+    .profile_info h1 {
+        font-size: 2.4rem;
+        line-height: 2.8rem;
+        letter-spacing: 1px;
+        padding-bottom: 40px;
+    }
+    
+    .profile_info p {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        letter-spacing: .8px;
+    }
+    
+    .profile_info > div svg {
+        height: 2rem;
+    }}
+
+
+

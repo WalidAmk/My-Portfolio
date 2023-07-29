@@ -1,0 +1,128 @@
+
+footer {
+    width: 100%;
+}
+
+.contactContainer {
+    background-color: #fff;
+    padding: 70px 120px;
+}
+
+
+.contactContainer > h2 {
+    color: #147efb;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.contactContainer > h3 {
+    color: #000;
+    font-size: 2.3rem;
+}
+
+.contactContainer > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.contactContainer > div > div {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+
+.contactContainer > div > div > div:first-child {
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactContainer > div > div > div:first-child svg {
+    fill: #147efb;
+}
+
+.contactContainer > div > div > div:nth-child(2) {
+    padding-left: 10px;
+}
+
+.contactContainer > div > div > div:nth-child(2) > p:first-child {
+    font-size: 1.2rem;
+    font-weight: 800;
+    line-height: 1.3rem;
+}
+
+.contactContainer > div > div > div:nth-child(2) > p:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #393939;
+}
+
+.contactContainer > div > div > div:nth-child(2) > p:nth-child(2) a {
+    text-decoration: none;
+    color: #393939;
+    transition: all .3s ease-in-out;
+}
+
+.contactContainer > div > div > div:nth-child(2) > p:nth-child(2) a:hover {
+    color: #147efb;
+}
+
+.copyrightSection {
+    background-color: #393939;
+    padding: 20px;
+}
+
+.copyrightSection p {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .contactContainer {
+        padding: 70px 80px;
+    }
+    
+    .contactContainer > div {
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    .contactContainer > div > div {
+        padding-right: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contactContainer {
+        padding: 70px 30px;
+    }
+
+    .contactContainer > h2 {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+    }
+    
+    .contactContainer > h3 {
+        font-size: 1.5rem;
+    }
+
+    .copyrightSection p {
+        font-size: .9rem;
+    }
+
+    .copyrightSection {
+        padding: 10px;
+    }
+
+}
+
